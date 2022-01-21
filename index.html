@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Clock</title>
+</head>
+
+<body>
+    <section>
+        <div class="time-zone">
+            <ul>
+                <li>
+                    <input type="checkbox" class="checkbox" data-city="tokyo" id="tokyo">
+                    <label for="tokyo">Tokyo</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="checkbox" data-city="australia" id="australia">
+                    <label for="australia">Australia</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="checkbox" data-city="africa" id="africa">
+                    <label for="africa">Africa</label>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="clock">
+                <h1>local time</h1>
+                <div class="analog-clock">
+                    <div class="hand hour indHour"></div>
+                    <div class="hand minutes indMinutes"></div>
+                    <div class="hand seconds indSeconds"></div>
+                </div>
+                <div id="local-digital-clock" class="digital-clock"></div>
+            </div>
+            <!-- <div class="container"> -->
+            <div class="clock">
+                <h1>chicago usa</h1>
+                <div class="analog-clock">
+                    <div class="hand hour Usahour" id="usahour"></div>
+                    <div class="hand minutes Usaminutes" id="usaminutes"></div>
+                    <div class="hand seconds Usaseconds" id="usaseconds"></div>
+                </div>
+                <div id="usa-digital-clock" class="digital-clock"></div>
+            </div>
+
+            <div class="clock">
+                <h1>london </h1>
+                <div class="analog-clock">
+                    <div class="hand hour ukHour" id="usahour"></div>
+                    <div class="hand minutes ukMinutes" id="usaminutes"></div>
+                    <div class="hand seconds ukSeconds" id="usaseconds"></div>
+                </div>
+                <div id="uk-digital-clock" class="digital-clock"></div>
+            </div>
+
+            <div class="clock hidden reveal" data-city="tokyo" id="tokyo">
+                <h1>Tokyo </h1>
+                <div class="analog-clock">
+                    <div class="hand hour tyoHour" id="usahour"></div>
+                    <div class="hand minutes tyoMinutes" id="usaminutes"></div>
+                    <div class="hand seconds tyoSeconds" id="usaseconds"></div>
+                </div>
+                <div id="tyo-digital-clock" class="digital-clock"></div>
+            </div>
+
+
+            <div class="clock hidden reveal" data-city="australia" id="australia">
+                <h1>Australia/ACT </h1>
+                <div class="analog-clock">
+                    <div class="hand hour australiaHour" id="usahour"></div>
+                    <div class="hand minutes autraliaMinutes" id="usaminutes"></div>
+                    <div class="hand seconds australiaSeconds" id="usaseconds"></div>
+                </div>
+                <div id="australia-digital-clock" class="digital-clock"></div>
+            </div>
+
+
+            <div class="clock hidden reveal" data-city="africa" id="africa">
+                <h1>Africa/Abidjan </h1>
+                <div class="analog-clock">
+                    <div class="hand hour africaHour"></div>
+                    <div class="hand minutes africaMinutes"></div>
+                    <div class="hand seconds africaSeconds"></div>
+                </div>
+                <div id="africa-digital-clock" class="digital-clock"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
